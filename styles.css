@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #f0d7b9;
@@ -18,5 +20,4 @@ body {
 }
 .square { 
     border: 1px black solid;
-    flex: 1;
 }
