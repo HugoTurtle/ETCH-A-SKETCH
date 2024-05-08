@@ -15,4 +15,10 @@ function createGridOfSquareDivs(gridDimension) {
     }
 
 }
-createGridOfSquareDivs(2);
+
+createGridOfSquareDivs(16);
+
+container.addEventListener("mouseover", (EVENT) => {
+    let target = EVENT.target;
+    target.style.background = "black";
+})
