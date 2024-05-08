@@ -2,7 +2,7 @@ const container = document.querySelector("#container");
 const WIDTH_OF_CONTAINER = 550;
 
 function createGridOfSquareDivs(gridDimension) {
-    
+
     //Removes everything inside the container div
     container.innerHTML = "";
 
@@ -30,6 +30,9 @@ const resetButton = document.querySelector("#reset");
 resetButton.addEventListener('click', () => {
 
     let input = +prompt("Input a number to reset grid (e.g 2 becomes 2x2 grid)",16);
+    while(input > 100 || input < 0) {
+        input = +prompt("Please input a valid number (e.g 2 becomes 2x2 grid)", 16);
+    }
     createGridOfSquareDivs(input);
 
 })
